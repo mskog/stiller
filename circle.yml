@@ -3,10 +3,20 @@ machine:
     - docker
 
 dependencies:
+  cache_directories:
+      - "~/docker"
   override:
     - docker info
+    - if [[ -e ~/docker/image.tar ]]; then docker load -i ~/docker/image.tar; fi
     - docker build -t mskog/stiller .
+    - mkdir -p ~/docker; docker save mskog/stiller > ~/docker/image.tar
 
 test:
   override:
     - docker run mskog/stiller rspec
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - ssh $DEPLOY_TO -t 'bash -l -c "cd /var/docker/stiller && docker-compose build && docker-compose restart"'
