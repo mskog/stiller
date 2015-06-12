@@ -19,4 +19,4 @@ deployment:
   production:
     branch: master
     commands:
-      - ssh $DEPLOY_TO -t 'bash -l -c "cd /var/docker/stiller && docker-compose build && docker-compose restart"'
+      - ssh $DEPLOY_TO -t 'bash -l -c "cd /var/docker/stiller && sudo git pull origin master && sudo docker-compose build && sudo docker-compose up -d"'
