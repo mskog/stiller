@@ -26,7 +26,7 @@ describe Stiller::API do
     context "with missing parameters" do
       Given(:params){{}}
       Given(:parsed_response){JSON.parse(last_response.body)}
-      Given(:expected_response){{"error" => "url is missing, url is invalid"}}
+      Given(:expected_response){{"error" => "url is missing"}}
       Then{expect(last_response.status).to eq 400}
       And{expect(parsed_response).to eq expected_response}
     end
