@@ -4,7 +4,7 @@ ruby '2.2.0'
 
 gem 'grape', '~> 0.13'
 gem 'dotenv', '~> 2.0'
-gem 'puma', '~> 2.13'
+gem 'puma', '~> 2.14'
 
 group :development do
   gem 'shotgun'
