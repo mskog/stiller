@@ -4,14 +4,14 @@ ruby '2.2.0'
 
 gem 'grape', '~> 0.14'
 gem 'dotenv', '~> 2.1'
-gem 'puma', '~> 2.15'
+gem 'puma', '~> 3.0'
 
 group :development do
   gem 'shotgun'
 end
 
 group :development, :test do
-  gem 'webmock', '~> 1.22'
+  gem 'webmock', '~> 1.24'
   gem 'rspec', '~> 3.4.0'
   gem 'rspec-given', '~> 3.8'
   gem 'rack-test', '~> 0.6.3'
