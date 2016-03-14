@@ -1,7 +1,7 @@
 GEM
   remote: https://www.rubygems.org/
   specs:
-    activesupport (4.2.5)
+    activesupport (4.2.6)
       i18n (~> 0.7)
       json (~> 1.7, >= 1.7.7)
       minitest (~> 5.1)
@@ -13,8 +13,8 @@ GEM
       ice_nine (~> 0.11.0)
       thread_safe (~> 0.3, >= 0.3.1)
     builder (3.2.2)
-    byebug (8.2.1)
-    coderay (1.1.0)
+    byebug (8.2.2)
+    coderay (1.1.1)
     coercible (1.0.0)
       descendants_tracker (~> 0.0.1)
     crack (0.4.3)
@@ -26,7 +26,7 @@ GEM
     equalizer (0.0.11)
     given_core (3.8.0)
       sorcerer (>= 0.3.7)
-    grape (0.14.0)
+    grape (0.15.0)
       activesupport
       builder
       hashie (>= 2.1.0)
@@ -39,7 +39,7 @@ GEM
     hashdiff (0.3.0)
     hashie (3.4.3)
     i18n (0.7.0)
-    ice_nine (0.11.1)
+    ice_nine (0.11.2)
     json (1.8.3)
     method_source (0.8.2)
     minitest (5.8.4)
@@ -52,7 +52,7 @@ GEM
     pry-byebug (3.3.0)
       byebug (~> 8.0)
       pry (~> 0.10)
-    puma (3.0.2)
+    puma (3.1.0)
     rack (1.6.4)
     rack-accept (0.4.5)
       rack (>= 0.4)
@@ -64,7 +64,7 @@ GEM
       rspec-core (~> 3.4.0)
       rspec-expectations (~> 3.4.0)
       rspec-mocks (~> 3.4.0)
-    rspec-core (3.4.1)
+    rspec-core (3.4.4)
       rspec-support (~> 3.4.0)
     rspec-expectations (3.4.0)
       diff-lcs (>= 1.2.0, < 2.0)
@@ -89,7 +89,7 @@ GEM
       coercible (~> 1.0)
       descendants_tracker (~> 0.0, >= 0.0.3)
       equalizer (~> 0.0, >= 0.0.9)
-    webmock (1.24.1)
+    webmock (1.24.2)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff
@@ -99,9 +99,9 @@ PLATFORMS
 
 DEPENDENCIES
   dotenv (~> 2.1)
-  grape (~> 0.14)
+  grape (~> 0.15)
   pry-byebug (~> 3.3)
-  puma (~> 3.0)
+  puma (~> 3.1)
   rack-test (~> 0.6.3)
   rspec (~> 3.4.0)
   rspec-given (~> 3.8)
