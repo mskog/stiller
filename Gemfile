@@ -2,9 +2,9 @@ source 'https://www.rubygems.org'
 
 ruby '2.2.0'
 
-gem 'grape', '~> 0.15'
+gem 'grape', '~> 0.16'
 gem 'dotenv', '~> 2.1'
-gem 'puma', '~> 3.1'
+gem 'puma', '~> 3.4'
 
 group :development do
   gem 'shotgun'
